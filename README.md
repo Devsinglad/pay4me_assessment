@@ -176,6 +176,6 @@ jobs:
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-| Feature 1                | Feature 2                  | Feature 3                  |
-|--------------------------|----------------------------|----------------------------|
-| ![](screenshots/img.png) | ![](screenshots/img_1.png) | ![](screenshots/img_2.png) |
+![image1](screenshots/img.png)
+![image2](screenshots/img_1.png)
+![image3](screenshots/img_2.png) 
