@@ -1,4 +1,3 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_annotation/riverpod_annotation.dart';
 
@@ -11,7 +10,6 @@ class ToggleProvider extends _$ToggleProvider {
 
   void toggleTab(int index) {
     state = index;
-    debugPrint("Tab changed: $state");
   }
 }
 

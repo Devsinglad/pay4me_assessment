@@ -91,6 +91,5 @@ class SearchProvider extends _$SearchProvider {
     state = countries
         .where((element) => element.toLowerCase().contains(value.toLowerCase()))
         .toList();
-    print(state);
   }
 }

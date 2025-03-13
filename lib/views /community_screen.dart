@@ -8,7 +8,7 @@ import 'package:pay4me_assessment/utils%20/assets/app_assets.dart';
 import 'package:pay4me_assessment/widgets/gap.dart';
 
 import '../widgets/custom_text.dart';
-import 'components/bottom_navBar.dart';
+import 'components/bottom_nav_bar.dart';
 import 'components/community_post.dart';
 import 'components/post_modal.dart';
 
@@ -227,10 +227,10 @@ class _CommunityScreenState extends ConsumerState<CommunityScreen> {
             color: tabIndex == index ? AppColors.kBlue : AppColors.kTransparent,
             borderRadius: BorderRadius.circular(20)),
         alignment: Alignment.center,
-        child: SvgPicture.asset(
-          icon,
-          color: tabIndex == index ? AppColors.kWhite : AppColors.kDarkGrey,
-        ),
+        child: SvgPicture.asset(icon,
+            colorFilter: ColorFilter.mode(
+                tabIndex == index ? AppColors.kWhite : AppColors.kDarkGrey,
+                BlendMode.srcIn)),
       ),
     );
   }

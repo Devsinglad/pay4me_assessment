@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-import '../utils /responsiveness.dart';
-
 class CustomContainer extends StatelessWidget {
   final Widget child;
   final double? width;
@@ -32,24 +30,9 @@ class CustomContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final helper = ResponsiveHelper.of(context);
-
-    /// Calculate widths and heights based on percentages or fixed values
-    final calculatedWidth = widthPercentage > 0
-        ? helper.getWidthPercentage(widthPercentage)
-        : width != null
-        ? helper.scaleWidth(width!)
-        : null;
-
-    final calculatedHeight = heightPercentage > 0
-        ? helper.getHeightPercentage(heightPercentage)
-        : height != null
-        ? helper.scaleHeight(height!)
-        : null;
-
     return Container(
-      width: calculatedWidth,
-      height: calculatedHeight,
+      width: width,
+      height: height,
       margin: margin,
       padding: padding,
       color: color,
