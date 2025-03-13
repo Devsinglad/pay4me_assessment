@@ -17,11 +17,12 @@ class MockPostModal extends StatelessWidget {
 void main() {
   testWidgets('CommunityScreen FloatingActionButton test',
       (WidgetTester tester) async {
-    // Build the CommunityScreen widget wrapped in a ProviderScope
     await tester.pumpWidget(
       ProviderScope(
         child: MaterialApp(
-          home: CommunityScreen(),
+          home: Scaffold(
+            body: CommunityScreen(),
+          ),
         ),
       ),
     );

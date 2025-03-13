@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:pay4me_assessment/views%20/community_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-
+  debugPaintSizeEnabled = false;
   SystemChrome.setPreferredOrientations([
     DeviceOrientation.portraitUp,
   ]);
